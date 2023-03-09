@@ -1,0 +1,1 @@
+você pega uma cor, e modifica ela com o hsl para assim conseguir outros tons da cor, conseguindo uma palheta de cores simetricas 

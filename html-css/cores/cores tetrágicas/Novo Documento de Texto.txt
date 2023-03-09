@@ -1,0 +1,1 @@
+vc pega uma cor, traça com a cor oposta, depois vc escolhe outra cor e tbm traça com a cor oposta dela. Pode ser qualquer cor, não precisa formar um retangulo como na imagem

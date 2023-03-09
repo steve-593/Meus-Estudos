@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <link rel="shortcut icon" href="favicon593.ico" type="image/x-icon">
+    <style>
+
+        /* SELETORES PERSONALIZADOS
+            #   = id
+            .   = class
+            :   = pseudo-class
+            ::  = pseudo-elemento
+            >   = children
+        */
+        a{
+            color: greenyellow;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: green;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color:black;
+        }
+
+        a:active{
+            color: pink;
+        }
+
+        .especial{
+            background-color: rgb(241, 138, 224);
+        }
+
+        .especial::before{
+            content: '⇒';
+        }
+
+        .especial::after{
+            content: '⇐';
+        }
+                
+    </style>
+</head>
+<body>
+    <h1>Personalizando Link</h1>
+        <ul>
+            <li><a href="https://github.com/steve-593">⇒ GitHub ⇐</a></li>
+            <li><a href="https://www.youtube.com/channel/UCVZM0lECZFWsajil0QwDvwQ" class="especial">Canal no YouTube</a></li>
+            <li><a href="https://twitter.com/steve_pensador" class="especial">Twitter</a></li>
+
+        </ul>
+    
+</body>
+</html>

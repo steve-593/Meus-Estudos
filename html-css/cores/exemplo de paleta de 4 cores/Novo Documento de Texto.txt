@@ -1,0 +1,1 @@
+vc pega as cores vizinhas que são as cores harmoniozas, e para destaque pode pogar a cor opostas

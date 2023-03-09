@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: android;
+    src: url('arquivos/fontes/idroid.otf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.titulo-principal {
+    text-align: left;
+    font-family: android, sans-serif;
+    color: green;
+    margin: 10px;
+}
+
+.titulos {
+    font-family: android, sans-serif;
+    color: green;
+    background-image: linear-gradient(to right, rgba(0, 128, 0, 0.274), rgb(255, 255, 255));
+    padding: 0px 7px;
+    margin: 20px;
+}
+
+nav>a{
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(3, 97, 26);
+    margin: 10px;
+    font-weight: bolder;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    background-color: rgba(164, 248, 164, 0.767);
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgb(10, 206, 98), rgb(1, 97, 47));
+    padding: 7px;
+    color: white;
+    box-shadow: 1px 1px 5px 0px black;
+    margin-bottom: 0;
+}
+
+header>p {
+    text-align: center;
+}
+
+header>h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 30px;
+
+}
+
+.link-de-nav:hover{
+    background-color: rgb(3, 70, 19);
+    border-radius: 3px;
+
+}
+
+.background-content {
+    background-color: white;
+    max-width: 890px;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 2px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.452);
+    border-radius: 0px 0px 10px 10px;
+    border-width: 20px;
+    border-color: red;
+
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 25px;
+    margin: 15px 20px;
+
+}
+
+.extra {
+    background-color: rgba(8, 177, 98, 0.404);
+    padding: 25px 5px;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px 20px;
+}
+
+.extra>p {
+    margin: 0;
+}
+
+.lista {
+    display: flex;
+    padding: 10px 0px 10px 30px;
+}
+
+.itens-lista {
+    width: 70%;
+}
+
+
+
+.titulo-extra {
+    background-color: rgb(4, 134, 84);
+    padding: 3px;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    padding: 10px;
+    font-size: 17px;
+    margin: 10px 20px 0px 20px;
+    
+}
+
+footer {
+    background-color: rgb(2, 77, 48);
+    padding: 5px;
+    margin-top: 20px;
+}
+
+footer>p {
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: small;
+}
+
+.adp {
+    margin: auto;
+    display: block;
+    width: 95%;
+}
+
+.pequenos-png{
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+iframe{
+    margin: auto;
+    display: block;
+    width: 100%;
+    background-color: green;
+    
+}
+
+.youtube{
+    border-width: 20px;
+    
+    border-style: solid;
+    border-color: green;
+    
+}
+
+@media(max-width:540px) {
+    .lista {
+        display: block;
+    }
+}
