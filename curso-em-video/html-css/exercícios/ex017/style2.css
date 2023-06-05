@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: teste;
+    src: url('fonts/Steak\ Rough.otf') format('opentype'), url('fonts/Steak\ Rough.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-family: 'teste', Times, serif;
+    font-size: 3em;
+}

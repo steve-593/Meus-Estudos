@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+@font-face {
+    font-family: teste;
+    src: url('fonts/Steak\ Rough.otf') format('opentype'), url('fonts/Steak\ Rough.ttf') format('truetype');
+}
+
+/*
+Tipos de format()
+- opentype (otf)
+- truetype (ttf)
+- embedded- opentype
+- truetype-aat (Apple Advanced Typography)
+- svg
+*/
+
+body{
+    font-family: 'Lobster', cursive, sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+h1{
+    font-family: 'Abril Fatface', cursive, serif;
+    font-size: 3em;
+
+}
+
+h2{
+    font-family: 'teste', sans-serif;
+    font-size: 1.5em;
+}

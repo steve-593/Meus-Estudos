@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passo com DOM</title>
+    <style>
+        body {
+            background-color: rgb(6, 124, 124);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+
+        <p>
+            Aqui vai o resultado
+        </p>
+
+        <p>
+            Aprendendo a usa o <strong>DOM</strong> em JavaScript
+        </p>
+
+    <div id="msg" name="msg">
+        Clique em mim
+    </div>
+
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        //window.document.write('Está escrito assim:' + p1.innerText /* mostra somento o texto, pegando apenas a tag 'p' sem o strong(filho) */)
+        //corpo.style.background = 'black'
+        //p1.style.color = 'blue'
+        document.write(p1.innerHTML) //o innetHTML ja consegue pegar o strong, pois ele pega o elemento e os filhos
+
+        // //por ID
+        // var d = windowdo.document.getElementsById('msg')
+        // d.style.background = 'green'
+        // //d.innetText = 'Estou aguardando...'
+        // window.document.getElementById('msg').innerText = 'Olá!'
+
+        // //por name
+        // var d = window.document.getElementsByName('msg')[0]
+        // d.innerText = 'Olá!'
+
+        //por seletor
+        var d = window.document.querySelector('div#msg')
+        d.innerText = 'Olá!'
+        d.style.color = 'pink'
+        d.style.background = 'purple'
+
+    </script>
+</body>
+</html>

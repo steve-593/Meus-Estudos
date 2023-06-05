@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100vh;
+        }
+
+        main {
+            background-color: lightgray;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 50vh 50vh ;
+            grid-template-areas: 
+            "img form"
+            "img form";
+        }
+
+        div {
+            border: 2px solid black;
+        }
+
+        #imagem {
+            grid-area: img;
+            grid-column: 1/2;
+            grid-row: 1/3;
+        }
+
+        #form {
+            grid-area: form;
+            grid-template-columns: 2/3;
+            grid-template-rows: 1/5;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        #login {
+            height: 40vh;
+        }
+        
+        #left {
+            text-align: start;
+            height: 20vh;
+        }
+
+        #submit {
+            height: 39vh;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="imagem">
+            <h1>IMAGEM</h1>
+                <p>
+                    
+                </p>
+        </div>
+
+        <div id="form">
+            <form action="" autocomplete="on">
+            
+            
+                <div id="login">
+                    <input type="text" name="username" id="username" maxlength="20" autocomplete="username" placeholder="USERNAME" class="login-text"> <br>
+                    <input type="password" name="password" id="password" maxlength="20" autocomplete="current-password" placeholder="PASSWORD" class="login-text">
+                </div> 
+    
+                
+                <div id="left">
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember">Remember me</label> <br> <br>
+                </div>
+    
+                <div id="submit">
+                <a href="#">Forgot password?</a> <br> <br>
+                
+                    <input type="submit" value="LOGIN" id="Login"> <br>
+                    <input type="submit" value="Sign up" id="sign-up">
+                </div>
+    
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/tablet.css">
+</head>
+<body>
+    <main>
+        <div id="shadow">
+            <picture>
+                <source media="(min-width: 768px min-heigth: 768px)"  srcset="images/Mitsubishi_logo_grande300.png">                
+                <img src="images/mitsubishi11redm200.png" alt="LOGO">
+            </picture>
+        </div>
+            <form action="" autocomplete="on">
+            
+                <div id="login">
+                    <input type="text" name="username" id="username" maxlength="20" autocomplete="username" placeholder="USERNAME" class="login-text" required> <br>
+                    <input type="password" name="password" id="password" maxlength="20" autocomplete="current-password" placeholder="PASSWORD" class="login-text" required>
+                </div>
+            
+                <div id="left">
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember">Remember me</label> <br> <br>
+                </div>
+
+                <div id="submit">
+                <a href="#">Forgot password?</a> <br> <br>
+            
+                    <input type="submit" value="LOGIN" id="login"> <br>
+                    <input type="submit" value="Sign up" id="sign-up">
+                </div>
+            </form>
+    </main>
+</body>
+</html>

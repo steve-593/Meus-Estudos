@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 15px;
+}
+
+.filho:nth-child(1n), .filho2:nth-child(1n){
+    background-color: blue;
+}
+
+.filho:nth-child(2n), .filho2:nth-child(2n) {
+    background-color: red;
+}
+
+.pai, .pai2 {
+    margin-bottom: 20px;
+    background-color: gray;
+    height: 100vh;
+    border: 2px solid red;
+    border-radius: 5px;
+    display: flex;
+}
+
+.pai {
+    /* flex-direction: row;
+    flex-wrap: nowrap; */
+    flex-flow: row wrap;
+}
+
+.pai2 {
+    flex-direction: row;
+}
+
+.filho, .filho2 {
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.74);
+}
+
+.filho2 {
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+#item2 {
+    flex-grow: 2;
+}

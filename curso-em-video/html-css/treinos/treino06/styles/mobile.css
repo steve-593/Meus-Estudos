@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Typical Device Breakpoints
+-----------------------------
+Pequenas telas: até 600px
+Celular: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Telas Grandes: acima de 1200px
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+}
+
+body {
+    width: 100vw;
+    background-color: #1F1E30;
+    color: white;
+}
+
+div#shadow {
+    height: 300px; 
+    position: relative;
+}
+
+img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow( 0px 0px 40px red);
+}
+
+form {
+    width: 85vw;
+    margin: auto;
+    text-align: center;
+}
+
+#left {
+    text-align: left;
+    padding: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.login-text {
+    border: none;
+    border-radius: 15px;
+    background-color: #343350;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+    box-shadow: 7px 7px 15px -7px black;
+}
+
+input::placeholder, a, label{
+    color: rgba(255, 255, 255, 0.678);
+}
+
+input#login[type=submit] {
+    background-color: #D83256;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0px 0px 0px;
+}
+
+input#login[type=submit]:active {
+    background-color: #b1062b;
+}
+
+input#sign-up[type=submit] {
+    background-color: #1F1E30;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    height: 50px;
+}
+
+input#sign-up[type=submit]:active {
+    color: red;
+}
+
+input[type=submit] {
+    font-size: 1em;
+}
+
+@media screen and (orientation: landscape) {
+    body {
+        height: 100vh;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 50vh 10vh 40vh;
+        grid-template-areas: 
+        "img login"
+        "img input"
+        "img submit"
+        ;
+        
+    }
+
+    /* div {
+        border: 2px solid black;
+    } */
+
+    div#shadow {
+        grid-area: img;
+        grid-column: 1/2;
+        grid-row: 1/5;
+
+        height: 100vh;
+    }
+
+    div#login {
+        grid-area: login;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    div#left {
+        grid-area: input;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    div#submit {
+        grid-area: submit;
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    div#login {
+        padding-top: 10px;
+    }
+
+    .login-text {   
+        height: 45px;
+        width: 90%;
+    }
+
+    #left {
+        text-align: right;
+        padding-right: 5%;
+    }
+
+    input#login[type=submit] {
+        height: 45px;
+        width: 90%;
+    }
+
+    input#sign-up[type=submit] {
+        width: 90%;
+    }
+}

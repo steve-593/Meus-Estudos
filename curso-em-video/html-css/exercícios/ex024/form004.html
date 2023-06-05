@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Dados pessoais</h1>
+        <form action="cadastro.js" autocomplete="on">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="inome">Nome: </label>
+                    <input type="text" name="nome" id="inome" required autocomplete="name" minlength="5" maxlength="30" placeholder="Nome Completo">
+                </p>
+
+                <p>
+                    <label for="iemail">e-mail: </label>
+                    <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="xxxx@email.com">
+                </p>
+
+                <p>
+                    <label for="itel">Telefone: </label>
+                    <input type="tel" name="tel" id="itel" required autocomplete="tel" min="9" max="11" placeholder="(xx)xxxxx-xxxx">
+                </p>
+            </fieldset>
+            <!--Estudar mais sobre RegEx-->
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+
+</body>
+</html>
