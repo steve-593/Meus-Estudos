@@ -2,7 +2,6 @@ let num = document.getElementById ('num')
 let res = document.getElementById ('res')
 let select = document.getElementById ('select')
 let dados = []
-dados.sort()
 
 function fNumero(n) {
     if(Number(n) >= 1 && Number(n) <= 100) {
@@ -35,6 +34,7 @@ function adicionar() {
 }
 
 function finalizar() {
+    dados.sort()
     if (dados.length == 0) {
         window.alert('Adicione valores antes de finalizar!')
     } else {
