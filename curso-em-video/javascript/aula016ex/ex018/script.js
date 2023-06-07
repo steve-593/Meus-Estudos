@@ -3,7 +3,7 @@ let res = document.getElementById ('res')
 let select = document.getElementById ('select')
 let dados = []
 
-// function compare(a,b){
+// function compare(a,b){   
 //     if(a > b){
 //         return 1
 //     }else if(a < b) {
@@ -44,24 +44,30 @@ function adicionar() {
 }
 
 function finalizar() {
-    //dados.sort(compare)
+    //dados.sort(compare) <-- funciona
     if (dados.length == 0) {
         window.alert('Adicione valores antes de finalizar!')
     } else {
+        let maior = dados[0]
+        let menor = dados[0]
         let soma = 0
 
-    for(let i = 0; i < dados.length; i++) {
-        soma += dados[i]
-    }
-
+        for (let pos in dados) {
+            soma += dados[pos]
+            if (dados[pos] > maior) {
+                maior = dados[pos]
+            }
+            if (dados[pos] < menor) {
+                menor = dados[pos]
+            }
+        }
+    
     res.innerHTML = `<p>Ao todo, temos ${dados.length} números cadastrados</p>
-    <p>O maior valor informado foi o ${dados[dados.length - 1]}</p>
-    <p>O menor valor informado foi o ${dados[0]}</p>
+    <p>O maior valor informado foi o ${maior}</p>
+    <p>O menor valor informado foi o ${menor}</p>
     <p>Somando todos os valores, temos ${soma}</p>
     <p>A média dos valores digitados é ${soma / dados.length}</p>`
     }
-
-    console.log(dados)
 }
 
 /*
