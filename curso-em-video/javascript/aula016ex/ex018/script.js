@@ -3,6 +3,16 @@ let res = document.getElementById ('res')
 let select = document.getElementById ('select')
 let dados = []
 
+// function compare(a,b){
+//     if(a > b){
+//         return 1
+//     }else if(a < b) {
+//         return -1
+//     } else {
+//         return 0
+//     } 
+// }
+
 function fNumero(n) {
     if(Number(n) >= 1 && Number(n) <= 100) {
         return true
@@ -34,7 +44,7 @@ function adicionar() {
 }
 
 function finalizar() {
-    dados.sort()
+    //dados.sort(compare)
     if (dados.length == 0) {
         window.alert('Adicione valores antes de finalizar!')
     } else {
@@ -50,6 +60,8 @@ function finalizar() {
     <p>Somando todos os valores, temos ${soma}</p>
     <p>A média dos valores digitados é ${soma / dados.length}</p>`
     }
+
+    console.log(dados)
 }
 
 /*
