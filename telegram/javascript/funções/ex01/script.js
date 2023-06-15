@@ -42,7 +42,7 @@ function menu() {
                 imprimir()
                 break
         }
-        if (quest <= 0 || quest >4) {
+        if (quest <= 0 || quest > 4) {
             opção_errada()
         }
     } while (quest != 4)
