@@ -1,0 +1,3 @@
+*Todo objeto é criado apartir de uma classe.
+*A calsse é um molde que é utilizado para criar um objeto
+    Dentro da classo nós conseguimos definir atributos e métodos que um objeto receberá

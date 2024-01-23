@@ -1,0 +1,22 @@
+Paradigmas de Programação do Javascript
+
+*Toda linguagem de Programação tem um Paradigma
+*Se encontra dentro de alguma classificação
+    Conforme suas funcionalidades
+    Do modo como permite que nós estruturemos o nosso código.
+*O Javascript(e diversas outras linguagens) possui vários paradigmas
+    Orientado a Objetos
+    Orientação a Eventos
+    Funcional e outras
+*Vamos aprofundar no Orientado a Objetos que ele possui.
+
+POO
+
+*POO vem de Programação Orientada a Objetos
+    Também conhecida como OOP(Object Oriented Programming)
+*Tem a idéia de abstrair, dentro do código
+*Permite que os objetos interajam entre si através da troca de mensagens
+*A base são as Classes e os Objetos
+*os Objetos nós já estamos vendo desde o módulo anterior
+    Conseguimos fazer mais com eles quando temos o envolvimento das Calsses
+    
