@@ -1,6 +1,6 @@
 *Temos abaixo, uma array bidimensional de naves que estão engatadas numa estação espacial
 
-*Para cada sub-array, a primeira posição é o nome da nave, a segunda é a quantidade de tripulantes e a terceura informa se o processo de engate já foi concluído ou não.
+*Para cada sub-array, a primeira posição é o nome da nave, a segunda é a quantidade de tripulantes e a terceira informa se o processo de engate já foi concluído ou não.
 
 *Nesta lista, a plataforma de engate que a nave está parada é o [ídice da nave no array+1]
 
@@ -16,3 +16,8 @@ const hitchedSpaceships = [
 
     1- Filtar o nome das naves que tem mais de 9 tripulantes
     2- Informar o número da plataforma em que esta a primeira nave que ainda está com engate pendente
+        ultilizar função "findIndex"
+    3- Destacar o nome de todas as naves colando-as em caixa alta
+    4- Exibir um alerta com todas estas informações
+    Pesquisar funções: "findIndex" e "join"
+    
