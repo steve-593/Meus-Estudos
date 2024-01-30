@@ -1,0 +1,7 @@
+*Em grande maioria, as classes podem ser intanciadas
+    Grande maioria porque algumas linguagens podem impedir isso
+*Instância de uma classe é o que dá origem ao objeto.
+    Quando dizemos que uma classe foi instanciada estamos dizendo apenas que um objeto foi criadop a partir da classe.
+*A classe vêm com um método especial que chamamos de construtor
+    Utilizamos para definir valores iniciais dos atributos de um objeto.
+    Este método é chamado quando criamos uma ionstância de uma classe com a palavra new
