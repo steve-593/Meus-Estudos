@@ -75,8 +75,6 @@ function programa() {
             case 3:
                 vf = false;
                 break
-            case 4:
-
             default: 
                 programa();
                 break

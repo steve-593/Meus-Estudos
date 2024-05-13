@@ -1,0 +1,7 @@
+* É um recurso do paradigma Orientado a Objetos
+* Permite que classes herdem características de outras classes
+    Ou seja, declaramos uma classe que vai herdar métodos e atributos de outra classe
+* É uma técnica de reuso do código
+* As duas classes devem ter uma relação de "é um"
+    Por exemplo: Todo capitão é uma pessoa
+    Poderia ter uma classe Captain herdando de Person
